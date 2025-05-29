@@ -3,6 +3,8 @@ import 'package:meu_app/screens/home_page.dart';
 import 'package:meu_app/screens/escalacao_screen.dart' as home;
 import 'package:meu_app/screens/selection_provider.dart';
 import 'package:meu_app/screens/terciarios_screen.dart' as terciarios;
+import 'package:meu_app/screens/atividade_screen.dart' as atividades;
+
 import 'package:provider/provider.dart';
 
 void main() {
@@ -15,6 +17,7 @@ void main() {
       "/": (context) => const HomePage(),
       "/escalacao_screen": (context) => const home.HomeScreen(),
       "/terciarios_screen": (context) => terciarios.HomeScreen(), // Nova tela// Confirme que essa tela existe
+      "/atividade_screen": (context) => atividades.HomeScreen(), // Nova tela// Confirme que essa tela existe
     },
     theme: ThemeData(primarySwatch: Colors.blue),
   )));
